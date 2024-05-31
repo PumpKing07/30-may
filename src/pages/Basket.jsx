@@ -1,12 +1,12 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
+import React from 'react';
 
-const basket = () => {
+
+function Basket() {
   return (
     <div>
-      <Navbar/>
+      hfghjgfd
     </div>
-  )
+  );
 }
 
-export default basket
+export default Basket;

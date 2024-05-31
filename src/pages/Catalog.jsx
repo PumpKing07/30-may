@@ -1,12 +1,13 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
+import React from 'react';
 
-const Catalog = () => {
+
+
+function Catalog() {
   return (
     <div>
-      <Navbar/>
+     Товары 
     </div>
-  )
+  );
 }
 
-export default Catalog
+export default Catalog;

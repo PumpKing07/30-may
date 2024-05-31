@@ -1,12 +1,12 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
+import React from 'react';
+import Navbar from '../components/Navbar';
 
-const Office = () => {
+function Office() {
   return (
     <div>
       <Navbar/>
     </div>
-  )
+  );
 }
 
-export default Office
+export default Office;
