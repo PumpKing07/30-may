@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from './image/logo.png'
 import SearchIcon from '@mui/icons-material/Search';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Basket from '../pages/Basket'
@@ -13,18 +12,6 @@ const Container = styled.div`
 `
 
 
-const Left = styled.div`
-    flex: 1;
-    text-align: center;
-`  
-const Center = styled.div`
-    flex: 1;
-    text-align: center;
-`
-const Right = styled.div`
-    flex: 1;
-    text-align: center;
-`
 
 const Wrapper = styled.div`
         padding: 10px 20px;
@@ -71,9 +58,7 @@ const Navbar = () => {
       </div>
     </Router>
     <div>
-        <div className="logo">
-            <img src={logo} alt="" />
-        </div>
+       
     </div>
     </Container>
   )
