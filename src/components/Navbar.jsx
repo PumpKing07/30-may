@@ -36,30 +36,7 @@ const Input = styled.input`
 const Navbar = () => {
   return (
     <Container>
-        <Wrapper>
-            <Left>Каталог</Left>
-           <Center>Кабинет</Center>
-           <Center>
-            <SearchContainre>
-                <SearchIcon/> 
-                <Input></Input>
-            </SearchContainre>
-           </Center>
-           <Right>Корзина</Right>
-        </Wrapper>
-        <Router>
-      <div>
-          <Route path="/Basket">
-            <Basket/>
-          </Route>
-          <Route path="/Office">
-            <Office/>
-          </Route>
-      </div>
-    </Router>
-    <div>
        
-    </div>
     </Container>
   )
 }

@@ -1,28 +1,35 @@
 import React from 'react';
 import styled from 'styled-components';
-import fon from '../images/BGback1.png'
-import gav from '../images/Gav.png'
-import caat from '../images/cat.png'
-import doog from '../images/dog.png'
-import kot from '../images/cat2.png'
+import gav from '../images/Gav.png';
+import caat from '../images/cat.png';
+import doog from '../images/dog.png';
+import kot from '../images/cat2.png';
 
 
 
-
-const BackgroundImage = styled.div`
-  background: url(${fon});
+const Menu = styled.button`
+  justify-content: space-around;
+  grid-gap: 30px;
+  width: 300;
+  height: 400; 
+  font-size: 16px;
+  text-transform: uppercase;
+  list-style-position: none;
+  color: #C1AB81;
 `
+
+
 const Gaav = styled.div`
   width: 707px;
   height: 771px;
-  display: block;
-  margin: 0 auto; 
+  display: flex;
+  margin: 0 auto;
 `
 
 const Caaat = styled.div`
   width: 123px;
   height: 168.34px;
-  display: block;
+  display: flex;
   margin: 1358px; 
  margin-top: -460px;
 `
@@ -30,7 +37,7 @@ const Caaat = styled.div`
 const Dooog = styled.div`
   width: 123px;
   height: 168.34px;
-  display: block;
+
   margin: 1517px; 
   margin-top: -1516px;
 `
@@ -38,49 +45,39 @@ const Dooog = styled.div`
 const Koot = styled.div`
   width: 123px;
   height: 168.34px;
-  display: block;
   margin: 1676px; 
   margin-top: -1660px;
 `
 
-
-const Left = styled.div`
-    flex: 1;
-    text-align: left;
-    color: #C1AB81;
-`  
 const Logo = styled.div`
     flex: 1;
     text-align: center;
+    display: block;
     color: #C1AB81;
-`
-const Right = styled.div`
-    flex: 1;
-    text-align: right;
-    color: #C1AB81;
-`
-const H1 = styled.div`
-  color: #C1AB81;
+    font-size: 40px;
+    font-weight: lighter;
 `
 
-const Button = styled.div`
+const H1 = styled.div`
   color: #C1AB81;
+  text-align: justify;
+  font-size: 75px;
+  font-weight: 300;
 `
+
 
 
 function Home() {
   return (
-    <BackgroundImage >
-     <Left>Главная Каталог Продукты Помощь</Left>
+    <div>
      <Logo>Мир <br/>животных </Logo>
-     <Right>Войти Корзина Контакты </Right>
      <H1>Самое лучшее -<br/>для животных</H1>
      <Gaav><img src= {gav} alt=""/></Gaav>
      <Caaat><img src= {caat} alt="" /></Caaat>
      <Dooog><img src={doog} alt="" /></Dooog>
      <Koot><img src={kot} alt="" /></Koot>
-     <Button>о нас</Button>
-    </BackgroundImage>
+     <Menu>о нас</Menu>
+    </div>
   );
 }
 
