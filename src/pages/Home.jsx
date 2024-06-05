@@ -7,16 +7,17 @@ import kot from '../images/cat2.png';
 
 
 
-const Menu = styled.button`
-  justify-content: space-around;
-  grid-gap: 30px;
-  width: 300;
-  height: 400; 
-  font-size: 16px;
-  text-transform: uppercase;
-  list-style-position: none;
-  color: #C1AB81;
-`
+// const Menu = styled.button`
+//   justify-content: space-around;
+//   grid-gap: 30px;
+//   width: 300;
+//   height: 400; 
+//   font-size: 16px;
+//   text-transform: uppercase;
+//   list-style-position: none;
+//   color: #C1AB81;
+
+// `
 
 
 const Gaav = styled.div`
@@ -31,22 +32,28 @@ const Caaat = styled.div`
   height: 168.34px;
   display: flex;
   margin: 1358px; 
- margin-top: -460px;
+  margin-top: -460px;
+  position:fixed;
+  position: absolute;
 `
 
 const Dooog = styled.div`
   width: 123px;
   height: 168.34px;
 
-  margin: 1517px; 
-  margin-top: -1516px;
+  margin: 1500px; 
+  margin-top: -449px;
+  position: fixed;
+  position: absolute;
 `
 
 const Koot = styled.div`
   width: 123px;
   height: 168.34px;
-  margin: 1676px; 
-  margin-top: -1660px;
+  margin: 1650px; 
+  margin-top: -429px;
+  position: fixed;
+  position: absolute;
 `
 
 const Logo = styled.div`
@@ -63,6 +70,10 @@ const H1 = styled.div`
   text-align: justify;
   font-size: 75px;
   font-weight: 300;
+  padding-top: 300px;
+  display: flex;
+  position: absolute;
+  margin-left: 150px;
 `
 
 
@@ -76,7 +87,6 @@ function Home() {
      <Caaat><img src= {caat} alt="" /></Caaat>
      <Dooog><img src={doog} alt="" /></Dooog>
      <Koot><img src={kot} alt="" /></Koot>
-     <Menu>о нас</Menu>
     </div>
   );
 }
