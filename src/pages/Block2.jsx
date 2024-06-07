@@ -3,10 +3,13 @@ import styled from 'styled-components'
 import yoyoo from '../images/yoyoyo.png'
 
 const York = styled.div`
-    background-color: #fae8c7;
-    display: flex;
-    margin-block-start: 100px;
-    inline-size: -150px;
+   background-color: #EFE9DD;
+   display: flex;
+   margin-block-start: 100px;
+   inline-size: -150px;
+   justify-content: center;
+   align-items: center;
+   padding-top: 100px;
 `
 
 

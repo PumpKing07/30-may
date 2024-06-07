@@ -5,7 +5,8 @@ import fon from './images/BGback1.png';
 import styled from 'styled-components';
 import Block2 from './pages/Block2';
 import Block3 from './pages/Block3';
-import Block4 from './pages/Block4';
+import Block5 from './pages/Block5';
+import Podval from './pages/Podval';
 
 const BackgroundImage = styled.div`
   background: url(${fon}) no-repeat;
@@ -18,7 +19,8 @@ const App = () => {
     <Home/>
     <Block2/>
     <Block3/>
-    <Block4/>
+    <Block5/>
+    <Podval/>
     </BackgroundImage>
     </div>
   )

@@ -1,17 +1,16 @@
 import React from 'react'
-import reec from '../images/rec.png'
 import styled from 'styled-components'
+import kon from '../images/b5.png'
 
-const Jora = styled.div`
+const Kon = styled.div`
     background-color: #fae8c7;
-    display: flex;
+    
 `
 
 function Block3 () {
   return (
     <div>
-      <Jora><img src={reec} alt="" /></Jora>
-      {/* <BIg><img src="" alt="" /></BIg> */}
+      <Kon><img src={kon} alt="" /></Kon>
     </div>
   )
 }
