@@ -8,19 +8,6 @@ import Navbar from '../components/Navbar';
 
 
 
-// const Menu = styled.button`
-//   justify-content: space-around;
-//   grid-gap: 30px;
-//   width: 300;
-//   height: 400; 
-//   font-size: 16px;
-//   text-transform: uppercase;
-//   list-style-position: none;
-//   color: #C1AB81;
-
-// `
-
-
 const Gaav = styled.div`
   width: 707px;
   height: 771px;

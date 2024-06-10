@@ -1,6 +1,5 @@
 import React from 'react'
-import Home from './pages/Home';
-
+import Navbar from './components/Navbar';
 
 import {
   createBrowserRouter,
@@ -10,9 +9,10 @@ import {
 import Joppaa from './pages/Joppaa';
 import Help from './pages/Help';
 
+
 const router = createBrowserRouter([, {
   path: '/',
-  element: <Home />
+  element: <Navbar/>
 },
 
 {
