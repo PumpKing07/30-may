@@ -1,27 +1,38 @@
 import React from 'react'
 import Home from './pages/Home';
-import Basket from './pages/Basket';
-import fon from './images/BGback1.png';
-import styled from 'styled-components';
-import Block2 from './pages/Block2';
-import Block3 from './pages/Block3';
-import Block5 from './pages/Block5';
-import Podval from './pages/Podval';
 
-const BackgroundImage = styled.div`
-  background: url(${fon}) no-repeat;
-`
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+import Joppaa from './pages/Joppaa';
+import Help from './pages/Help';
+
+const router = createBrowserRouter([, {
+  path: '/',
+  element: <Home />
+},
+
+{
+    path: '/catalog',
+    element: <Joppaa />,
+
+  },
+ {
+  path: '/help',
+  element: <Help/>
+ }  
+]);
+
+
+
+
 const App = () => {
   return (
     <div>
-    <BackgroundImage>
-    <Basket/>
-    <Home/>
-    <Block2/>
-    <Block3/>
-    <Block5/>
-    <Podval/>
-    </BackgroundImage>
+      <RouterProvider router={router} />
     </div>
   )
 }

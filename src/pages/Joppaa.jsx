@@ -9,10 +9,12 @@ const Joppa = styled.div`
 
 
 
-function Jopa () {
+function Joppaa () {
   return (
-    <Joppa><img src={jops} alt="" /></Joppa>
+    <a href="/">
+        <Joppa><img src={jops} alt="" /></Joppa>
+        </a>
   )
 }
 
-export default Jopa
+export default Joppaa

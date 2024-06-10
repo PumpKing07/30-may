@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 
 const Left = styled.div`
   color: #C1AB81;
@@ -29,10 +29,12 @@ function Basket() {
   return (
       <Wrapper>
       <Left>
-         <MenuItem>Главная</MenuItem>
-         <MenuItem>Каталог</MenuItem>
-         <MenuItem>Продукты</MenuItem>
-         <MenuItem>Помощь</MenuItem>
+         <MenuItem>
+            Главная
+            {/* Каталог
+            Продукты
+            Помощь */}
+         </MenuItem>
       </Left>
       <Right>
         <MenuItem>Корзина</MenuItem>

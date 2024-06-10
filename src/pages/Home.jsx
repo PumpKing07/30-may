@@ -4,6 +4,7 @@ import gav from '../images/Gav.png';
 import caat from '../images/cat.png';
 import doog from '../images/dog.png';
 import kot from '../images/cat2.png';
+import Navbar from '../components/Navbar';
 
 
 
@@ -75,18 +76,25 @@ const H1 = styled.div`
   position: absolute;
   margin-left: 150px;
 `
-
+const Linka = styled.a`
+  text-decoration: none;
+`
 
 
 function Home() {
   return (
     <div>
-     <Logo>Мир <br/>животных </Logo>
+     <Linka href="/catalog">
+           <Logo>Мир <br/>животных </Logo>
+     </Linka>
+
+
      <H1>Самое лучшее -<br/>для животных</H1>
      <Gaav><img src= {gav} alt=""/></Gaav>
      <Caaat><img src= {caat} alt="" /></Caaat>
      <Dooog><img src={doog} alt="" /></Dooog>
      <Koot><img src={kot} alt="" /></Koot>
+     <Navbar/>
     </div>
   );
 }
