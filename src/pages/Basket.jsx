@@ -1,46 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
 
-
-const Left = styled.div`
-  color: #C1AB81;
-  flex: 1;
-`
-
-const Right = styled.div`
-  flex: 0;
-  color: #C1AB81;
-`
-
-const Wrapper = styled.div`
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-`
-
-const MenuItem = styled.div`
-  font-size: 14px;
-  cursor: pointer;
-  margin-right: 30px;
-  display: inline-flex;
-`
-
-function Basket() {
+const Basket = () => {
   return (
-      <Wrapper>
-      <Left>
-         <MenuItem>
-            Главная
-            {/* Каталог
-            Продукты
-            Помощь */}
-         </MenuItem>
-      </Left>
-      <Right>
-        <MenuItem>Корзина</MenuItem>
-      </Right>
-      </Wrapper>
-  );
+    <div>
+      
+    </div>
+  )
 }
 
-export default Basket;
+export default Basket

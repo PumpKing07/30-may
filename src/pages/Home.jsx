@@ -5,8 +5,26 @@ import caat from '../images/cat.png';
 import doog from '../images/dog.png';
 import kot from '../images/cat2.png';
 import Navbar from '../components/Navbar';
+import fon from '../images/BGback1.png'
+import yoyoo from '../images/yoyoyo.png'
+import kon from '../images/b5.png'
+import kck from '../images/b4.png'
+import foon from '../images/back2.png'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import first from '../images/1s.png'
+import second from '../images/2s.png'
+import third from '../images/3s.png'
+import Slider from 'react-slick';
+import pod from '../images/podval.png'
 
 
+
+
+
+const Wrapper = styled.div`
+  background-image: url(${fon});
+`
 
 const Gaav = styled.div`
   width: 707px;
@@ -21,14 +39,13 @@ const Caaat = styled.div`
   display: flex;
   margin: 1358px; 
   margin-top: -460px;
-  position:fixed;
+  position: fixed;
   position: absolute;
 `
 
 const Dooog = styled.div`
   width: 123px;
   height: 168.34px;
-
   margin: 1500px; 
   margin-top: -449px;
   position: fixed;
@@ -44,14 +61,6 @@ const Koot = styled.div`
   position: absolute;
 `
 
-const Logo = styled.div`
-    flex: 1;
-    text-align: center;
-    display: block;
-    color: #C1AB81;
-    font-size: 40px;
-    font-weight: lighter;
-`
 
 const H1 = styled.div`
   color: #C1AB81;
@@ -63,25 +72,84 @@ const H1 = styled.div`
   position: absolute;
   margin-left: 150px;
 `
-const Linka = styled.a`
-  text-decoration: none;
+
+const York = styled.div`
+  background-color: #EFE9DD;
+  display: flex;
+  margin-block-start: 100px;
+  inline-size: -150px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
 `
+
+
+const Background2 = styled.div`
+    background: url(${foon}) no-repeat;
+    background-color: #222220;
+`
+
+const Kc = styled.div`
+`
+
+
+const Kon = styled.div`
+    background-color: #fae8c7;
+    
+`
+
+const SimpleCarousel = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
+
+
+  return (
+    <Slider {...settings}>
+      <div>
+        <img src={first} alt='slide-1' />
+      </div>
+      <div>
+        <img src={second} alt='slide-2' />
+      </div>
+      <div>
+        <img src={third} alt='slide-3' />
+      </div>
+    </Slider>
+  );
+};
+
+
+
+
+const Backk = styled.div`
+    color: #222220;
+`
+
+
 
 
 function Home() {
   return (
     <div>
-     <Linka href="/catalog">
-           <Logo>Мир <br/>животных </Logo>
-     </Linka>
-
-
+      <Wrapper>
+      <Navbar/>
      <H1>Самое лучшее -<br/>для животных</H1>
      <Gaav><img src= {gav} alt=""/></Gaav>
      <Caaat><img src= {caat} alt="" /></Caaat>
      <Dooog><img src={doog} alt="" /></Dooog>
      <Koot><img src={kot} alt="" /></Koot>
-     <Navbar/>
+    </Wrapper>
+    <York><img src={yoyoo} alt="" /></York>
+    <Kc><img src={kck} alt="" /></Kc>
+    <Kon><img src={kon} alt="" /></Kon>
+    <SimpleCarousel/>
+    <Backk><img src={pod} alt="" /></Backk>
     </div>
   );
 }
