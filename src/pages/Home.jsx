@@ -9,7 +9,7 @@ import fon from '../images/BGback1.png'
 import yoyoo from '../images/yoyoyo.png'
 import kon from '../images/b5.png'
 import kck from '../images/b4.png'
-import foon from '../images/back2.png'
+// import foon from '../images/back2.png'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import first from '../images/1s.png'
@@ -17,13 +17,15 @@ import second from '../images/2s.png'
 import third from '../images/3s.png'
 import Slider from 'react-slick';
 import pod from '../images/podval.png'
-
+import vid from '../images/video.png'
+import maps from '../images/maps.png'
 
 
 
 
 const Wrapper = styled.div`
   background-image: url(${fon});
+  background-size: cover;
 `
 
 const Gaav = styled.div`
@@ -76,7 +78,7 @@ const H1 = styled.div`
 const York = styled.div`
   background-color: #EFE9DD;
   display: flex;
-  margin-block-start: 100px;
+  /* margin-block-start: 100px; */
   inline-size: -150px;
   justify-content: center;
   align-items: center;
@@ -84,19 +86,37 @@ const York = styled.div`
 `
 
 
-const Background2 = styled.div`
-    background: url(${foon}) no-repeat;
-    background-color: #222220;
-`
+// const Background2 = styled.div`
+//     background: url(${foon}) no-repeat;
+//     background-color: #222220;
+// `
 
 const Kc = styled.div`
+background-color: #C1AB81;
 `
 
 
 const Kon = styled.div`
-    background-color: #fae8c7;
-    
+  background-color: #EFE9DD;   
+  
 `
+
+const A0 = styled.a`
+  position: absolute;
+  width: 220px;
+  height: 219.22px;
+  left: 162px;
+  top: 3384px;
+  display: flex;
+`
+
+const A9 = styled.a`
+  position: absolute;
+  right: 600px;
+  top: 3770px;
+`
+
+
 
 const SimpleCarousel = () => {
   const settings = {
@@ -147,7 +167,11 @@ function Home() {
     </Wrapper>
     <York><img src={yoyoo} alt="" /></York>
     <Kc><img src={kck} alt="" /></Kc>
-    <Kon><img src={kon} alt="" /></Kon>
+    <Kon>
+      <img src={kon} alt="" /> 
+    <A0 href="/vide"><img src={vid} alt="" /></A0>
+    <A9 href="mapss"><img src={maps} alt="" /></A9>
+    </Kon>
     <SimpleCarousel/>
     <Backk><img src={pod} alt="" /></Backk>
     </div>
