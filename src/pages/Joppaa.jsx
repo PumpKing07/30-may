@@ -22,6 +22,7 @@ const A1 = styled.a`
       text-align: center;
       font-size: 42px;
       margin-left: 400px;
+      margin-top: -10px;
     }
 
     a {
@@ -34,11 +35,13 @@ const A1 = styled.a`
     p {
       text-align: center;
       font-size: 16px;
+      margin-top: -20px;
     }
 `
 
 const Jops = styled.div`
-  
+  margin-left: 100px;
+  margin-top: -200px;
 `
 
 function Joppaa () {
@@ -53,7 +56,7 @@ function Joppaa () {
         <p>Мы собрали каталог, который понравился многим <br/>
             людям и решили поделиться с вами!</p>
       </A1>
-      <Jops><img src={cad} alt="" /></Jops>
+      <Jops href="/lejj"><img src={cad} alt="" /></Jops>
     </Joppa>
   )
 }

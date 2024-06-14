@@ -9,7 +9,8 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import ReactPlayer from 'react-player';
 import styled from 'styled-components';
-
+import Basket from './pages/Basket';
+import Tabar from './pages/Tabar';
 
 
  
@@ -36,11 +37,15 @@ const router = createBrowserRouter([, {
  },
  {
   path: '/basket',
-  element: <Help/>
+  element: <Basket/>
  },
  {
   path: '/home',
   element: <Home/>
+ },
+ {
+  path: '/lejj',
+  element: <Tabar/>
  },
 {
   path: '/vide',
@@ -57,7 +62,6 @@ const App = () => {
   return (
     <div>
       <RouterProvider router={router} />
-      <ReactPlayer router={router} />
     </div>
   )
 }

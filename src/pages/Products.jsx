@@ -4,17 +4,15 @@ import products from '../images/prod.png'
 import prod from '../images/1.png'
 
 const Wrapper = styled.div`
-      background-image: url(${products}) ;
+    background-image: url(${products}) ;
+    background-size: cover;
+    background-position: center;
+    background-position: 50% 15%;
+    height: 953px;
 
 `
 
-const H1 = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 45px;
 
-`
 
 const PRod = styled.div`
     margin-left: 160px;
@@ -46,14 +44,14 @@ const A1 = styled.a`
 function Products() {
   return (
     <Wrapper>
-     <A1>
-        <div className='products'>
-            <a href="/home">Вернутся на главную</a>
-            <h1>Продукты</h1>
-            
-        </div>
-    </A1>
-    <PRod><img src={prod} alt="" /></PRod>
+        <A1>
+            <div className='products'>
+                <a href="/home">Вернутся на главную</a>
+                <h1>Продукты</h1>
+                
+            </div>
+        </A1>
+        <PRod><img src={prod} alt="" /></PRod>
     </Wrapper>
   )
 }

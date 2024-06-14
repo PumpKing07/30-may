@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# `Учебная практика: "Сайт-магазин" - Мир животных`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Концепция нашего сайта заключаеться в том что вы можете преобрести товары для животных, плюс туда входят товары для груминга
 
-## Available Scripts
-
-In the project directory, you can run:
+## `В каталоге проекта вы можете запустить:`
 
 ### `npm start`
+Запускает приложение в режиме разработки.
+Откройте http://localhost:3000 чтобы просмотреть его в вашем браузере.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Страница будет перезагружена после внесения изменений.
+Вы также можете увидеть любые ошибки lint в консоли.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Запускает программу запуска тестов в режиме интерактивного просмотра.
+Дополнительную информацию смотрите в разделе о выполнении тестов.
 
 ### `npm run build`
+Создает приложение для рабочей среды в папке сборки.
+Программа корректно объединяет React в рабочем режиме и оптимизирует сборку для достижения наилучшей производительности.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Сборка сокращена, а имена файлов содержат хэши.
+Ваше приложение готово к развертыванию!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Дополнительные сведения см. в разделе о развертывании.
 
 ### `npm run eject`
+Примечание: это односторонняя операция. После извлечения вы не сможете вернуться назад!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Если вас не устраивает инструмент сборки и выбранная конфигурация, вы можете удалить его в любое время. Эта команда удалит зависимость от одиночной сборки из вашего проекта.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Вместо этого он скопирует все файлы конфигурации и переходные зависимости (webpack, Babel, ESLint и т.д.) прямо в ваш проект, чтобы вы имели полный контроль над ними. Все команды, кроме eject, по-прежнему будут работать, но они будут указывать на скопированные скрипты, чтобы вы могли их настроить. На данный момент вы можете действовать самостоятельно.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Вам не обязательно использовать eject. Разработанный набор функций подходит для небольших и средних предприятий, и вы не должны чувствовать себя обязанным использовать эту функцию. Однако мы понимаем, что этот инструмент был бы бесполезен, если бы вы не могли настроить его, когда будете к этому готовы.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## `Какие библиотеки мы использовали`
 
-## Learn More
+```npm install vite```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+это инструмент сборки, который значительно улучшает опыт разработки фронтенда. С помощью Vite можно создать среду разработки для таких фреймворков, как Vue и React и даже для ванильного JavaScript-приложения с dev-сервером и hot reloading всего за три команды.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```npm install -g react-video```
 
-### Code Splitting
+служит для добавления видео на сайте
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```npm install react-router-dom```
 
-### Analyzing the Bundle Size
+эта библиотека служит для переходов 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```npm install react-slick --save```
 
-### Making a Progressive Web App
+эта библиотека служит для создания карусели 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## `Команда разработчиков`
 
-### Advanced Configuration
+Разработка "Сайт-магазина" выполняли: Агаджанов Фёдор и Шарганова Елизавета.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## `Источники`
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Смотрели туториалы по созданию сайта:
+[Корзина](https://www.youtube.com/watch?v=JyU2RbwYxJA)
+[Карусель](https://ru.hexlet.io/qna/javascript/questions/kak-sdelat-karusel-react)
